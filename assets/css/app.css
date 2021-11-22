@@ -1,0 +1,278 @@
+/* This file is for your main application CSS */
+
+/*
+ * Basic styling for elixircasts.io screencasts
+ */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #222E4D;
+  font-size: 14px;
+  line-height: 22px;
+  overflow-x: hidden;
+}
+
+::selection{
+  background-color: #FFEC6E;
+  color: #000;
+}
+
+::-moz-selection {
+  background: #46c2ca;
+  color: #000;
+}
+
+.container {
+	width: 75%;
+	height: 100%;
+  padding:20px;
+	background-color: #fff;
+	top: 100px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #CCC;
+}
+
+a {
+  color: rgb(0, 0, 238);
+  text-decoration: underline;
+}
+
+.alert:empty {
+  display:none;
+}
+
+p.alert.alert-info {
+  padding: 7px;
+  background: #DFF0D8;
+}
+
+p.alert.alert-danger {
+  padding: 7px;
+  background: #F2DEDE;
+}
+
+.alert.alert-danger p {
+  padding: 7px;
+  background: #F2DEDE;
+}
+
+span.help-block {
+  background: #F2DEDE;
+  padding: 2px;
+}
+
+
+.flash-notice {
+  padding: 7px;
+  background: #D9EDF7;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.nav-header {
+  position: relative;
+  width: 100%;
+}
+
+.nav-h1 {
+  float: left;
+  clear:none;
+}
+
+.nav-header .nav-link {
+  float: right;
+  margin: -40px 10px 10px 10px;
+}
+
+.nav-header .nav-link a {
+  margin-left: 5px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+
+form input[type="text"], input[type="email"], textarea, select{
+    border: 1px solid #000;
+    color: #000;
+    font-size: 14px;
+    height: 20px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 100%;
+}
+
+.elixircasts-form .help-block {
+  background: #F2DEDE;
+}
+
+form select {
+    height: 35px;
+}
+
+form select[multiple] {
+    height: auto;
+}
+
+form textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+}
+
+li {
+  list-style: none;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pagination {
+  margin-left: 0;
+  margin-bottom: 0px;
+  list-style: none;
+  text-align: center;
+}
+.pagination:before,
+.pagination:after {
+  display: table;
+  content: "";
+}
+.pagination:after {
+  clear: both;
+}
+.pagination li {
+  display: inline;
+}
+.pagination a {
+  display: inline-block;
+  padding: 5px 12px;
+}
+.pagination a:hover {
+  text-decoration: none;
+}
+.pagination .next a {
+  float: right;
+}
+.pagination .previous a {
+  float: left;
+}
+.pagination .disabled a,
+.pagination .disabled a:hover {
+  color: #999999;
+  background-color: #fff;
+  cursor: default;
+}
+
+/* Alerts and form errors used by phx.new */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert p {
+  margin-bottom: 0;
+}
+.alert:empty {
+  display: none;
+}
+.invalid-feedback {
+  color: #a94442;
+  display: block;
+  margin: -1rem 0 2rem;
+}
+
+/* LiveView specific classes for your customization */
+.phx-no-feedback.invalid-feedback,
+.phx-no-feedback .invalid-feedback {
+  display: none;
+}
+
+.phx-click-loading {
+  opacity: 0.5;
+  transition: opacity 1s ease-out;
+}
+
+.phx-disconnected{
+  cursor: wait;
+}
+.phx-disconnected *{
+  pointer-events: none;
+}
+
+.phx-modal {
+  opacity: 1!important;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.phx-modal-content {
+  background-color: #fefefe;
+  margin: 15vh auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.phx-modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.phx-modal-close:hover,
+.phx-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
